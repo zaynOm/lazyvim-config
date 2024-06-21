@@ -33,6 +33,12 @@ return {
       views = {
         mini = { win_options = { winblend = 0 } },
       },
+      routes = {
+        {
+          filter = { event = "notify", find = "No information available" },
+          opts = { skip = true },
+        },
+      },
     },
   },
   {
