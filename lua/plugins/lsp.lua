@@ -18,6 +18,34 @@ return {
           },
         },
       },
+      emmet_language_server = {
+        settings = {
+          emmet = {
+            filetypes = {
+              "css",
+              "html",
+              "javascriptreact",
+              "typescriptreact",
+              "less",
+              "sass",
+              "scss",
+              "svelte",
+              "pug",
+              "vue",
+            },
+            init_options = {
+              html = {
+                options = {
+                  -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
+                  ["bem.enabled"] = true,
+                  ["jsx.enabled"] = true,
+                },
+              },
+              -- showSuggestionsAsSnippets = true,
+            },
+          },
+        },
+      },
     },
   },
 }
