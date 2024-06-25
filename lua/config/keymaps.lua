@@ -3,4 +3,5 @@
 -- Add any additional keymaps here
 --
 -- C-c does a hard exit and does not update diagnoses
-vim.keymap.set("i", "<C-c>", "<Esc>", { desc = "Escape and clear hlsearch" })
+-- vim.keymap.set({ "i", "n" }, "<C-c>", "<esc>", { desc = "Escape and clear hlsearch" })
+vim.keymap.set({ "i", "n" }, "<C-c>", "<cmd>noh<cr><esc>", { desc = "Escape and Clear hlsearch" })
