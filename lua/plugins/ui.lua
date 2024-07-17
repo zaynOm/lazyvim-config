@@ -14,6 +14,15 @@ return {
           winblend = 0,
         },
       }
+      -- local cmp = require("cmp")
+      -- opts.mapping = vim.tbl_extend("force", opts.mapping, {
+      --   ["<M-e>"] = cmp.mapping(function(fallback)
+      --     if cmp.visible() then
+      --       cmp.close()
+      --     end
+      --     fallback()
+      --   end),
+      -- })
     end,
   },
   {
