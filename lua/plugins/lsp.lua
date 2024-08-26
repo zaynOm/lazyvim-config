@@ -7,6 +7,7 @@ return {
         settings = {
           pylsp = {
             plugins = {
+              rope_completion = { enabled = true }, -- fixes the auto completion order
               rope_autoimport = { enabled = true },
               pylsp_mypy = { enabled = true },
               flake8 = { enabled = false },
