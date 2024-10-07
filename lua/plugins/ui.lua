@@ -52,18 +52,24 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    opts = function(_, opts)
-      opts.diagnostics = {
-        float = {
-          border = "rounded",
-        },
-      }
-    end,
+    -- opts = function(_, opts)
+    opts = {
+
+      -- diagnostics = {
+      --   float = {
+      --     border = "rounded",
+      --   },
+      -- },
+      inlay_hints = {
+        enabled = false,
+      },
+    },
+    -- end,
   },
   {
     "rcarriga/nvim-notify",
     opts = {
-      timeout = 10000,
+      timeout = 5000,
     },
   },
 }

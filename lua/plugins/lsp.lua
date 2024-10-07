@@ -20,6 +20,7 @@ return {
         },
       },
       emmet_language_server = {
+        --FIX: disable emmet outside jsx/tsx
         settings = {
           emmet = {
             filetypes = {
@@ -35,6 +36,7 @@ return {
               "vue",
             },
             init_options = {
+              -- jsx = true,
               html = {
                 options = {
                   -- For possible options, see: https://github.com/emmetio/emmet/blob/master/src/config.ts#L79-L267
