@@ -41,6 +41,12 @@ return {
       },
       views = {
         mini = { win_options = { winblend = 0 } },
+        hover = {
+          win_options = {
+            -- winblend = 10,
+            winhighlight = "Normal:Normal",
+          },
+        },
       },
       routes = {
         {
@@ -53,13 +59,13 @@ return {
   {
     "neovim/nvim-lspconfig",
     -- opts = function(_, opts)
+    -- TODO: fix the diagnostics popup bg color
     opts = {
-
-      -- diagnostics = {
-      --   float = {
-      --     border = "rounded",
-      --   },
-      -- },
+      diagnostics = {
+        float = {
+          border = "rounded",
+        },
+      },
       inlay_hints = {
         enabled = false,
       },
