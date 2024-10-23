@@ -6,5 +6,8 @@ return {
     conceal = {
       enabled = true,
     },
-  }, -- your configuration
+    document_color = {
+      kind = "background", -- "inline" | "foreground" | "background"
+    },
+  },
 }
