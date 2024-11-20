@@ -11,3 +11,7 @@ vim.keymap.set("n", "<C-h>", "<Cmd>NvimTmuxNavigateLeft<CR>", {})
 vim.keymap.set("n", "<C-j>", "<Cmd>NvimTmuxNavigateDown<CR>", {})
 vim.keymap.set("n", "<C-k>", "<Cmd>NvimTmuxNavigateUp<CR>", {})
 vim.keymap.set("n", "<C-l>", "<Cmd>NvimTmuxNavigateRight<CR>", {})
+
+-- theprimagen maps
+vim.keymap.set("v", "<leader>p", [["_dP]])
+vim.keymap.set({ "n", "v" }, "<leader>h", [["_d]])
