@@ -2,23 +2,25 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
-      pylsp = {
-        -- mason = false,
-        settings = {
-          pylsp = {
-            plugins = {
-              rope_completion = { enabled = true }, -- fixes the auto completion order
-              rope_autoimport = { enabled = true },
-              pylsp_mypy = { enabled = true },
-              flake8 = { enabled = false },
-              pyflakes = { enabled = false },
-              mccabe = { enabled = false },
-              -- desabled by default
-              pylint = { enabled = false },
-            },
-          },
-        },
-      },
+      -- pylsp = {
+      --   -- mason = false,
+      -- settings = {
+      --   pylsp = {
+      --     plugins = {
+      -- rope_completion = { enabled = true }, -- fixes the auto completion order
+      -- rope_autoimport = { enabled = true },
+      -- pylsp_mypy = { enabled = true },
+      -- flake8 = { enabled = false },
+      -- pyflakes = { enabled = false },
+      -- mccabe = { enabled = false },
+      -- autopep8 = { enabled = false },
+      -- yapf = { enabled = false },
+      --         -- desabled by default
+      --         pylint = { enabled = false },
+      --       },
+      --     },
+      --   },
+      -- },
       emmet_language_server = {
         --FIX: disable emmet outside jsx/tsx
         settings = {
