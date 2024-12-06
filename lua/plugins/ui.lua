@@ -34,6 +34,32 @@ return {
     },
   },
   {
+    "neovim/nvim-lspconfig",
+    -- opts = function(_, opts)
+    -- TODO: fix the diagnostics popup bg color
+    opts = {
+      diagnostics = {
+        float = {
+          border = "rounded",
+        },
+      },
+      inlay_hints = {
+        enabled = false,
+      },
+    },
+    -- end,
+  },
+  {
+    "folke/snacks.nvim",
+    ---@type snacks.Config
+    opts = {
+      notifier = {
+        timeout = 5000,
+        top_down = false,
+      },
+    },
+  },
+  {
     "folke/noice.nvim",
     opts = {
       presets = {
@@ -54,28 +80,6 @@ return {
           opts = { skip = true },
         },
       },
-    },
-  },
-  {
-    "neovim/nvim-lspconfig",
-    -- opts = function(_, opts)
-    -- TODO: fix the diagnostics popup bg color
-    opts = {
-      diagnostics = {
-        float = {
-          border = "rounded",
-        },
-      },
-      inlay_hints = {
-        enabled = false,
-      },
-    },
-    -- end,
-  },
-  {
-    "rcarriga/nvim-notify",
-    opts = {
-      timeout = 5000,
     },
   },
 }
