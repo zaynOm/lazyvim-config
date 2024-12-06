@@ -34,6 +34,7 @@ return {
           color = function() return LazyVim.ui.fg("Special") end,
         },
       },
+      lualine_y = {},
       lualine_z = {},
     },
   },
