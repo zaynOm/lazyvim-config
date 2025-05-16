@@ -1,30 +1,49 @@
 return {
   {
-    "hrsh7th/nvim-cmp",
-    opts = function(_, opts)
-      opts.window = {
-        completion = {
+    "saghen/blink.cmp",
+    opts = {
+      completion = {
+        menu = {
           border = "rounded",
           winhighlight = "Normal:MyHighlight",
           winblend = 0,
         },
         documentation = {
-          border = "rounded",
-          winhighlight = "Normal:MyHighlight",
-          winblend = 0,
+          window = {
+            border = "rounded",
+            winhighlight = "Normal:MyHighlight",
+            winblend = 0,
+          },
         },
-      }
-      -- local cmp = require("cmp")
-      -- opts.mapping = vim.tbl_extend("force", opts.mapping, {
-      --   ["<M-e>"] = cmp.mapping(function(fallback)
-      --     if cmp.visible() then
-      --       cmp.close()
-      --     end
-      --     fallback()
-      --   end),
-      -- })
-    end,
+      },
+    },
   },
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   opts = function(_, opts)
+  --     opts.window = {
+  --       completion = {
+  --         border = "rounded",
+  --         winhighlight = "Normal:MyHighlight",
+  --         winblend = 0,
+  --       },
+  --       documentation = {
+  --         border = "rounded",
+  --         winhighlight = "Normal:MyHighlight",
+  --         winblend = 0,
+  --       },
+  --     }
+  --     -- local cmp = require("cmp")
+  --     -- opts.mapping = vim.tbl_extend("force", opts.mapping, {
+  --     --   ["<M-e>"] = cmp.mapping(function(fallback)
+  --     --     if cmp.visible() then
+  --     --       cmp.close()
+  --     --     end
+  --     --     fallback()
+  --     --   end),
+  --     -- })
+  --   end,
+  -- },
   {
     "williamboman/mason.nvim",
     opts = {
@@ -35,7 +54,6 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
-    -- opts = function(_, opts)
     -- TODO: fix the diagnostics popup bg color
     opts = {
       diagnostics = {
@@ -47,12 +65,23 @@ return {
         enabled = false,
       },
     },
-    -- end,
   },
   {
-    "folke/snacks.nvim",
+    "snacks.nvim",
     ---@type snacks.Config
     opts = {
+      dashboard = {
+        preset = {
+          header = [[
+███████╗ █████╗ ██╗   ██╗███╗   ██╗ ██████╗ ███╗   ███╗
+╚══███╔╝██╔══██╗╚██╗ ██╔╝████╗  ██║██╔═══██╗████╗ ████║
+  ███╔╝ ███████║ ╚████╔╝ ██╔██╗ ██║██║   ██║██╔████╔██║
+ ███╔╝  ██╔══██║  ╚██╔╝  ██║╚██╗██║██║   ██║██║╚██╔╝██║
+███████╗██║  ██║   ██║   ██║ ╚████║╚██████╔╝██║ ╚═╝ ██║
+╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝
+          ]],
+        },
+      },
       notifier = {
         timeout = 5000,
         top_down = false,

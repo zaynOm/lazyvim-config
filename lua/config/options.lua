@@ -16,3 +16,7 @@ vim.g.lazyvim_prettier_needs_config = false
 -- vim.opt.swapfile = false
 -- vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+
+-- vim.opt.shiftwidth = 4
+
+vim.g.lazyvim_php_lsp = "intelephense"
